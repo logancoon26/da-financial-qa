@@ -20,11 +20,11 @@ Ask a natural language question like *"WWhat were Apple's primary revenue driver
 da-financial-qa/
 ├── app.py              # Streamlit dashboard (entry point)
 │
-├── fetch.py            # Step 1 — Download 10-K filings from SEC EDGAR
-├── clean.py            # Step 2 — Parse HTML → clean text → JSONL chunks
-├── finetune.py         # Step 3 — QLoRA fine-tuning with HuggingFace PEFT
-├── rag.py              # Step 4 — Build FAISS index and retrieval pipeline
-├── eval_compare.py     # Step 6 — Evaluate and compare model configurations
+├── fetch.py            # Download 10-K filings from SEC EDGAR
+├── clean.py            # Parse HTML → clean text → JSONL chunks
+├── finetune.py         # QLoRA fine-tuning with HuggingFace PEFT
+├── rag.py              # Build FAISS index and retrieval pipeline
+├── eval_compare.py     # Evaluate and compare model configurations
 │
 ├── requirements.txt
 └── README.md
