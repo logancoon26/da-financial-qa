@@ -106,9 +106,9 @@ Embeds all chunks with BAAI/bge-m3 and stores them in a FAISS IndexFlatIP. The i
 
 The retrieval pipeline also implements lightweight metadata-aware retrieval:
 
-detects company names mentioned in the query using normalized company matching
-filters retrieved chunks to the detected company when possible
-reduces cross-company retrieval errors common in financial RAG systems
+- Detects company names mentioned in the query using normalized company matching
+- Filters retrieved chunks to the detected company when possible
+- Reduces cross-company retrieval errors common in financial RAG systems
 
 This improves retrieval grounding for companies with overlapping terminology across SEC filings.
 
@@ -145,6 +145,8 @@ The app exposes the full retrieval + generation pipeline through a browser UI. A
 - The generated answer
 - Retrieved source excerpts (company, period, section, relevance score)
 - Live metrics: retrieval latency, generation latency, end-to-end latency, token throughput, faithfulness, and answer relevance
+
+Run with: `streamlit run app.py` 
 
 ---
 
