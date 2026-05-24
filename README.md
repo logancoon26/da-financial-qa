@@ -6,7 +6,7 @@ A portfolio project demonstrating an end-to-end pipeline for answering questions
 
 ## What it does
 
-Ask a natural language question like *"WWhat were Apple's primary revenue drivers?"* and the system will:
+Ask a natural language question like *"What were Apple's primary revenue drivers?"* and the system will:
 
 1. Retrieve the most relevant excerpts from a FAISS vector store built on SEC 10-K filings
 2. Pass those excerpts + the question to a fine-tuned LLM
