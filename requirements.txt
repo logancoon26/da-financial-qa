@@ -1,28 +1,22 @@
-# Data pipeline
 requests>=2.31
 beautifulsoup4>=4.12
 lxml>=5.0
- 
-# Fine-tuning
+
 torch>=2.1
 transformers>=4.40
-peft>=0.10          
-trl>=0.8            
-bitsandbytes>=0.43  
+peft>=0.10
+trl>=0.8
+bitsandbytes>=0.43
 datasets>=2.18
 accelerate>=0.28
- 
-# RAG
-faiss-cpu>=1.8      
+
+faiss-cpu>=1.8
 sentence-transformers>=3.0
- 
-# Evaluation
+
 rouge-score>=0.1
 nltk>=3.8
- 
-# Demo
-gradio>=4.0
 
-numpy
-pandas
-streamlit
+numpy>=1.26
+pandas>=2.2
+streamlit>=1.35
+tqdm>=4.66

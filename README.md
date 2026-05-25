@@ -82,7 +82,9 @@ Streamlit Dashboard
 
 ## Download Required Artifacts
 
-Large artifacts are hosted on Hugging Face Hub:
+Large artifacts are hosted on Hugging Face Hub: https://huggingface.co/datasets/lcoon12/da-financial-qa
+
+Command: git clone https://huggingface.co/datasets/lcoon12/da-financial-qa
 
 - model/
 - data/
@@ -161,6 +163,7 @@ The app exposes the full retrieval + generation pipeline through a browser UI. A
 
 Run with: `streamlit run app.py` 
 
+![Example Dashboard Image](images/image.png)
 ---
 
 ## Key design decisions
