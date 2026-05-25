@@ -173,3 +173,5 @@ Run with: `streamlit run app.py`
 **Why RAG on top of fine-tuning?** Fine-tuning teaches the model *how* to reason about financial language. RAG gives it *which* document to reason about. They address different problems and are complementary.
 
 **Why sentence-boundary chunking?** Fixed-size token chunking cuts mid-sentence, losing context at boundaries. Sentence-aware chunking with overlap preserves context between chunks.
+
+**Why metadata-aware retrieval?** Pure semantic retrieval can surface chunks from the wrong company. Metadata-aware retrieval detects company mentions in the user query and filters FAISS candidates by company metadata, reducing cross-company contamination in generated answers.
