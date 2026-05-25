@@ -24,7 +24,7 @@ st.set_page_config(page_title="RAG Dashboard", layout="wide")
 def load_resources():
     retriever = Retriever()
 
-    generator = load_generator("models/merged")  # or BASE_MODEL if needed
+    generator = load_generator("models/merged")  
 
     embed_model = SentenceTransformer("BAAI/bge-m3")
 

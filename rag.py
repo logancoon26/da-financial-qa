@@ -84,19 +84,19 @@ def normalize_company_name(name: str) -> str:
 
     name = name.lower()
 
-    # 1. remove possessive "'s"
+    # remove possessive "'s"
     name = re.sub(r"'s\b", "", name)
 
-    # 2. remove remaining apostrophes
+    # remove remaining apostrophes
     name = name.replace("'", "")
 
-    # 3. remove punctuation (but keep spaces/numbers)
+    #  remove punctuation (but keep spaces/numbers)
     name = re.sub(r"[^\w\s]", " ", name)
 
-    # 4. normalize whitespace
+    #  normalize whitespace
     name = re.sub(r"\s+", " ", name).strip()
 
-    # 5. suffix + stopword removal (important upgrade)
+    #  suffix + stopword removal (important upgrade)
     stopwords = {
         "of", "the", "and", "amp"
     }
