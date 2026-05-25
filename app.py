@@ -50,7 +50,7 @@ user_query = st.text_input(
     placeholder="Ask something..."
 )
 
-st.caption("💡 Example: What is the main driver of revenue for Apple?")
+st.caption("💡 Example: What were Apple's primary revenue drivers?")
 
 
 # ── Run inference ────────────────────────────────────────────────────────────
