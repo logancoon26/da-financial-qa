@@ -94,6 +94,7 @@ Command: git clone https://huggingface.co/datasets/lcoon12/da-financial-qa
 - data/
 
 After downloading, put them into the project root
+
 ---
 
 ## Pipeline details
