@@ -80,6 +80,19 @@ Generated Answer                   │
 Streamlit Dashboard
 ```
 
+## Download Required Artifacts
+
+Large artifacts are hosted on Hugging Face Hub:
+
+- model/
+- data/
+
+After downloading, put them into the project root:
+
+da-financial-qa/
+├── models/
+├── data/
+
 ---
 
 ## Pipeline details
