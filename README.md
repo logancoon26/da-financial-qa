@@ -170,7 +170,7 @@ Run with: `streamlit run app.py`
 
 **Why QLoRA?** Full fine-tuning a 7B model requires ~56GB GPU RAM. QLoRA quantizes the frozen base model to 4-bit and trains only small low-rank adapter matrices. Achieves competitive downstream performance with substantially lower GPU memory requirements.
 
-**Why RAG on top of fine-tuning?** Fine-tuning teaches the model *how* to reason about financial language. RAG gives it *which* document to use for an answer. They address different problems and are complementary.
+**Why RAG on top of fine-tuning?** Fine-tuning teaches the model *how* to reason about financial language. RAG gives it *which* documents have most useful information. They address different problems and are complementary.
 
 **Why sentence-boundary chunking?** Fixed-size token chunking cuts mid-sentence, losing context at boundaries. Sentence-aware chunking with overlap preserves context between chunks.
 
