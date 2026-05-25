@@ -39,6 +39,10 @@ da-financial-qa/
 ```bash
 pip install -r requirements.txt
 
+requirements.txt installs the CPU-compatible PyTorch build by default for maximum compatibility.
+
+For GPU acceleration (recommended for fine-tuning and inference), install the CUDA-enabled PyTorch build for your system before installing requirements.
+
 # Build the dataset (no GPU needed)
 python fetch.py
 python clean.py
@@ -94,7 +98,6 @@ After downloading, put them into the project root:
 da-financial-qa/
 ├── models/
 ├── data/
-
 ---
 
 ## Pipeline details
